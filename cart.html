@@ -26,7 +26,7 @@
         <div id="cart-items" class="mt-4"></div>
         <hr>
         <h4 id="total-price" class="text-end"></h4>
-        <a href="/home.html" class="btn btn-outline-secondary">Back to Home</a>
+        <a href="index.html" class="btn btn-outline-secondary">Back to Home</a>
 
     </div>
 
@@ -68,7 +68,6 @@
 
             totalPriceEl.textContent = `Total: $${total.toFixed(2)}`;
 
-            // ربط أحداث الحذف
             document.querySelectorAll('.remove-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     const id = parseInt(btn.dataset.id);
